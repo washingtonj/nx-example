@@ -25,6 +25,7 @@
       "executor": "@nx/vite:dev-server",
       "defaultConfiguration": "development",
       "options": {
+        "base": "/",
         "buildTarget": "order-client:build"
       },
       "configurations": {
