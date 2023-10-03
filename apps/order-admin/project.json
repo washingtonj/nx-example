@@ -9,7 +9,8 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/apps/order-admin"
+        "outputPath": "dist/apps/order-admin",
+        "base": "/admin"
       },
       "configurations": {
         "development": {
