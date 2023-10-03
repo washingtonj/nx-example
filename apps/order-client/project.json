@@ -1,7 +1,7 @@
 {
-  "name": "nx-example",
+  "name": "order-client",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/nx-example/src",
+  "sourceRoot": "apps/order-client/src",
   "projectType": "application",
   "targets": {
     "build": {
@@ -9,7 +9,7 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/apps/nx-example"
+        "outputPath": "dist/apps/order-client"
       },
       "configurations": {
         "development": {
@@ -24,15 +24,15 @@
       "executor": "@nx/vite:dev-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "nx-example:build"
+        "buildTarget": "order-client:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "nx-example:build:development",
+          "buildTarget": "order-client:build:development",
           "hmr": true
         },
         "production": {
-          "buildTarget": "nx-example:build:production",
+          "buildTarget": "order-client:build:production",
           "hmr": false
         }
       }
@@ -41,14 +41,14 @@
       "executor": "@nx/vite:preview-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "nx-example:build"
+        "buildTarget": "order-client:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "nx-example:build:development"
+          "buildTarget": "order-client:build:development"
         },
         "production": {
-          "buildTarget": "nx-example:build:production"
+          "buildTarget": "order-client:build:production"
         }
       }
     },
@@ -57,14 +57,14 @@
       "outputs": ["{options.reportsDirectory}"],
       "options": {
         "passWithNoTests": true,
-        "reportsDirectory": "../../coverage/apps/nx-example"
+        "reportsDirectory": "../../coverage/apps/order-client"
       }
     },
     "lint": {
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/nx-example/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/order-client/**/*.{ts,tsx,js,jsx}"]
       }
     }
   },

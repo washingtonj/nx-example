@@ -1,0 +1,18 @@
+.product {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 0.5rem;
+}
+
+.product img {
+  min-width: 5rem;
+  height: 6rem;
+  object-fit: scale-down;
+  margin-right: 1rem;
+}
+
+.product p:nth-child(3) {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}

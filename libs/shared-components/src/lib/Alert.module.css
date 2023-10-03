@@ -1,0 +1,7 @@
+.alert {
+  background-color: rgb(252, 252, 219);
+  padding: .75rem;
+  border-radius: .5rem;
+  color: black;
+  font-size: .85;
+}
